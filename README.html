@@ -371,9 +371,6 @@ pre code {
 aimed at providing some datasets as well as the code allowing to
 update/generate those datasets. Those data are related to some lectures
 given by Nicolas Gaussel, year 2022.</p>
-</div>
-<div id="datasets" class="section level1">
-<h1>Datasets</h1>
 <p>Important warning: those datasets have been programmatically
 generated from free data sources. Those data have not been curated nor
 cross-checked in any manner. They might contain important flaws that do
@@ -383,28 +380,31 @@ subject to modification at any time. The author does not undertake to
 update such information at any specific frequency. The author will be
 liable or responsible for any loss or damage resulting, directly or
 indirectly,from the use of this information.</p>
-<<<<<<< HEAD
+</div>
+<div id="datasets" class="section level1">
+<h1>Datasets</h1>
 <p>Datasets can be found in the data folder while R code can be found in
 the R. folder.</p>
-=======
->>>>>>> 7860758c73980a95732d7d2a07c32fc2dd994757
-<div id="technicalities" class="section level2 unnumbered">
-<h2 class="unnumbered">Technicalities</h2>
-<p>Regarding Long and wide datasets see
-e.g. <a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data">Wikipedia</a>,
-where long is referred to as “narrow”.</p>
-<p>Regarding csv files see also
-<a href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia</a>.</p>
+<div id="technicalities" class="section level2">
+<h2>Technicalities</h2>
+<p>Regarding what long and wide datasets are see
+e.g. <a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data">Wikipedia
+Wide_and_narrow_data</a>, where long is referred to as “narrow”.</p>
+<p>Regarding what csv files are see also
+<a href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia
+Comma-separated_values</a>.</p>
 </div>
 <div id="sp500" class="section level2">
 <h2>S&amp;P500</h2>
 <p>We provide two datasets obtained from Yahoo, using the
 <a href="https://github.com/ropensci/yfR">yfR</a> package.</p>
 <ol style="list-style-type: decimal">
-<li><strong>SP500_simplified_with_volume .csv</strong>: long data
-containing a 5 year history of daily adjusted prices and volumes.</li>
-<li><strong>SP500_simplified_price_only_wide.csv</strong>: wide data
-containing a 5 year history of daily adjusted prices only.</li>
+<li><a href="data/SP500_simplified_with_volume.csv">SP500_simplified_with_volume.csv</a>:
+long data containing a 5 year history of daily adjusted prices and
+volumes.</li>
+<li><a href="data/SP500_simplified_price_only_wide.csv">SP500_simplified_price_only_wide.csv</a>:
+wide data containing a 5 year history of daily adjusted prices
+only.</li>
 </ol>
 <p>The code is provided in financialReturns.R. It allows to update those
 data and to generate a more complete (but significantly heavier)
