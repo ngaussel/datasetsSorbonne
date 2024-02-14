@@ -9,32 +9,24 @@ source("R/helper.R")
 
 
 ui <- fluidPage(
-  tags$style(HTML("div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}")),
-  tagAppendAttributes(
     titlePanel("US Stocks cross Section analysis"),
-    class="sticky"),
   sidebarLayout(
-    tagAppendAttributes(
-      sidebarPanel(
-      style = "height: 90vh; overflow-y: auto;", 
-      sliderInput("factor", "PCA Factor number", min = 1, max = 20, value = 1,step = 1),
-      br(),
+      sidebarPanel(width=2,
       selectInput("criteria","Criteria",choices = c("sector","marketCap_C","PE_C","Div_C"),selected = "sector")
-      ),class = "sticky"),
+      ),
     mainPanel(
       h2("Spectrum"),
       fluidRow( 
         column(4,sliderInput("nBins", "Number of Bins for EigenV", min = 20, max = 200, value = 30,step = 2)),
         column(4,sliderInput("ymax", "Maximum y", min = 2, max = 500, value = 500,step = 2))
       ),
+      br(),
       plotlyOutput("eigenPlot",height = "200px"),
       br(),
       h2("Principal components"),
+      fluidRow( 
+      sliderInput("factor", "PCA Factor number", min = 1, max = 20, value = 1,step = 1)
+      ),
       plotOutput("factorPlot",height = "500px"),
       br(),
       h2("Regression results"),
@@ -134,7 +126,6 @@ server <- function(input, output) {
     })
     
     
-     
     
 }
 

@@ -35,4 +35,6 @@ We provide two datasets obtained from Yahoo, using the <a href ="https://github.
 1.  <a href = "data/SP500_simplified_with_volume.csv">SP500_simplified_with_volume.csv</a>: long data containing a 5 year history of daily adjusted prices and volumes.
 2.  <a href = "data/SP500_simplified_price_only_wide.csv">SP500_simplified_price_only_wide.csv</a>: wide data containing a 5 year history of daily adjusted prices only.
 
-The code is provided in financialReturns.R. It allows to update those data and to generate a more complete (but significantly heavier) historical dataset with Open/High/low and close information.
+## Multi-Asset
+
+The file <a href = "data/prices_Multi_Asset_long.csv">prices_Multi_Asset_long.csv</a> contains 12 years of daily generic future values rolled regularly.
