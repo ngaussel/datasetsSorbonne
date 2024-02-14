@@ -2,6 +2,7 @@
 
 
 library(yfR)
+library(lubridate)
 source("R/helper.R")
 
 available_collections <- yf_get_available_collections()
